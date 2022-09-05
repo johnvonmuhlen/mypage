@@ -121,6 +121,10 @@ body
 	{
 		font-size: 12px;
 	}
+	.about-title h4
+	{
+		font-size:15px;
+	}
   }
 
 #personal
