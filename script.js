@@ -19,6 +19,20 @@ document.addEventListener('DOMContentLoaded', function() {
     var cards = document.getElementsByClassName('card first')
     var port_title = document.getElementById('port');
 
+    const items = document.querySelectorAll('.observe')
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            entry.target.classList.add("slide");
+            observer.unobserve(entry.target);
+        })
+    }, {
+        threshold:0
+    })
+
+    items.forEach(item => {
+        observer.observe(item)
+    })
 
     enol.addEventListener('click', () => {
         enol.innerHTML = 'Not Available At The Moment'
@@ -39,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }
 
+        /*
         if (window.pageYOffset <= title.offsetTop)
         {
             title.style.animation = 'Slide 2.1s ease'
@@ -48,10 +63,10 @@ document.addEventListener('DOMContentLoaded', function() {
             img.style.animation = 'Slide 1.5s ease'
             p.style.animation = 'Slide 3s ease'
         }
+        
 
         if (window.pageYOffset <= portfolio.offsetTop)
         {
-            console.log(port)
             port.style.animation = 'Slide 2s ease' 
         }
 
@@ -65,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
         }
+
+        */
         if (window.pageYOffset <= navbar.offsetTop)
         {
             homea.style.color = 'rgb(221, 52, 52)'

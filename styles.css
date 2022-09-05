@@ -825,6 +825,12 @@ body
     }
 }
 
+.slide
+{
+	animation: Slide 2.1s ease;
+}
+
+
 #hello
 {
     padding: 16px;
