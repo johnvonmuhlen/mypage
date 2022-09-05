@@ -117,10 +117,6 @@ body
 	#personal {
 	  flex-wrap: wrap;
 	}
-	
-	#navbar a{
-		font-size:12px;
-	}
   }
 
 #personal
@@ -161,6 +157,17 @@ body
 {
 	text-decoration: underline;
 	color: rgb(221, 52, 52);
+}
+
+#github
+{
+	color: inherit;
+}
+
+.fas.fa-brands.fa-github
+{
+	font-size: 25px;
+	padding-bottom: 15px;
 }
 
 #arrow

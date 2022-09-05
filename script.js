@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    var item = document.getElementsByClassName("fas");
+    var item = document.getElementsByClassName("i fas");
     var item1 = document.getElementById("arrow-up");
 
     item1.addEventListener("mouseover", func2, false);
