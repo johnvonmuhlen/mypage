@@ -46,6 +46,13 @@ body
     color: rgb(221, 52, 52);
 }
 
+@media screen and (max-width:320px)
+{
+  #navbar a{
+    font-size:13px;
+  }
+}
+
 .red
 {
 	color:rgb(221, 52, 52);
