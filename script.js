@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Get the navbar
     var navbar = document.getElementById("navbar");
-    var title = document.querySelector('#about-h1');
-    var img = document.querySelector('img');
-    var p = document.querySelector('p');
     var section = document.querySelector('#hello');
     var portfolio = document.querySelector('#port-trigger');
     var contact = document.querySelector('#contact');
@@ -15,16 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
     var portfolioa = document.querySelector('#portfolioa')
     var contacta = document.querySelector('#contacta')
     var enol = document.querySelector('#enol')
-    var lang = document.querySelector('#lang')
-    var cards = document.getElementsByClassName('card first')
-    var port_title = document.getElementById('port');
 
     const items = document.querySelectorAll('.observe')
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            entry.target.classList.add("slide");
-            observer.unobserve(entry.target);
+            entry.target.classList.toggle("slide", entry.isIntersecting);
+            if (entry.isIntersecting)
+            {
+                observer.unobserve(entry.target)
+            }
         })
     }, {
         threshold:0
@@ -53,35 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }
 
-        /*
-        if (window.pageYOffset <= title.offsetTop)
-        {
-            title.style.animation = 'Slide 2.1s ease'
-        }
-        if (window.pageYOffset <= img.offsetTop)
-        {
-            img.style.animation = 'Slide 1.5s ease'
-            p.style.animation = 'Slide 3s ease'
-        }
-        
-
-        if (window.pageYOffset <= portfolio.offsetTop)
-        {
-            port.style.animation = 'Slide 2s ease' 
-        }
-
-
-        if (window.pageYOffset >= img.offsetTop)
-        {
-            for (let i = 0; i < cards.length; i++)
-            {
-                let time = 2
-                cards[i].style.animation = `Slide ${parseInt(time)}s ease`
-            }
-            
-        }
-
-        */
         if (window.pageYOffset <= navbar.offsetTop)
         {
             homea.style.color = 'rgb(221, 52, 52)'
