@@ -46,13 +46,6 @@ body
     color: rgb(221, 52, 52);
 }
 
-@media all and (max-width:320px)
-{
-  #navbar a{
-    font-size:13px;
-  }
-}
-
 .red
 {
 	color:rgb(221, 52, 52);
@@ -123,6 +116,10 @@ body
 @media only screen and (max-width: 850px) {
 	#personal {
 	  flex-wrap: wrap;
+	}
+	#navbar a
+	{
+		font-size: 12px;
 	}
   }
 
