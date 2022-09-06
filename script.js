@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var abouta = document.querySelector('#abouta')
     var portfolioa = document.querySelector('#portfolioa')
     var contacta = document.querySelector('#contacta')
-    var enol = document.querySelector('#enol')
+    var enol = document.querySelector('.links.enol')
 
     const items = document.querySelectorAll('.observe')
 
@@ -31,9 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(item)
     })
 
-    enol.addEventListener('click', () => {
-        enol.innerHTML = 'Not Available At The Moment'
-    })
+    Array.from(enol).forEach(element => {
+        element.addEventListener('click', () => {
+            console.log(element)
+            element.innerHTML = 'Not Available At The Moment'
+        })
+    });
 
     // Get the offset position of the navbar
     var sticky = navbar.offsetTop;
