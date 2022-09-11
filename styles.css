@@ -134,7 +134,7 @@ body
 	justify-content: center;
 }
 
-#personal-div
+.personal-div
 {
 	padding-top: 60px;
 }
@@ -869,4 +869,9 @@ body
 {
 	font-size: 15px;
 	padding: 30px;
+}
+
+.falseh1
+{
+	font-size: 32px;
 }
