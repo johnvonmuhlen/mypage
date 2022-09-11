@@ -115,7 +115,7 @@ body
 }
 
 @media only screen and (max-width: 850px) {
-	#personal {
+	.personal {
 	  flex-wrap: wrap;
 	}
 	#navbar a
@@ -128,7 +128,7 @@ body
 	}
   }
 
-#personal
+.personal
 {
 	display: flex;
 	justify-content: center;
