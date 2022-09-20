@@ -875,3 +875,15 @@ body
 {
 	font-size: 32px;
 }
+
+.translateLink
+{
+	color: black;
+	text-decoration: none;
+}
+
+.translateLink:hover
+{
+	color: black;
+	text-decoration: underline;
+}
