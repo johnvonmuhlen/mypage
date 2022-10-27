@@ -822,22 +822,6 @@ body
     padding-top: 30px;
 }
 
-@keyframes Slide {
-    0%{
-        transform: translateX(-250px);
-    }
-    100%
-    {
-        transform: translateX(0px);
-    }
-}
-
-.slide
-{
-	animation: Slide 2.1s ease;
-}
-
-
 #hello
 {
     padding: 16px;

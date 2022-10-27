@@ -28,8 +28,17 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </head>
   <body>
     <div id="particle-container">
@@ -74,7 +83,7 @@
         <div class="text">
           <div>
             Hey there! I'm
-            <span class="highlight">John von Muhlen</span>,
+            <span style="display:inline-block;" class="highlight">John von Muhlen</span>,
           </div>
           <div>and I'm a full-stack Web Developer</div>
         </div>
@@ -97,14 +106,14 @@
       </ul>
     </div>
     <section id="hello" class="section hello">
-      <div class="about-title observe">
-        <h2 class="falseh1">ABOUT</h2>
+      <div class="about-title">
+        <h2 class="falseh1 wow animate__animated animate__slideInLeft" data-wow-duration="1s">ABOUT</h2>
         <hr class="hr1" />
       </div>
-      <div id="about-me" class="observe">
-        <img id="meimg" src="images/john.jpeg" alt="me" />
+      <div id="about-me">
+        <img id="meimg" class="wow animate__animated animate__slideInLeft" src="images/john.jpeg" alt="me" />
         <div id="about-p">
-          <p style="width: 50%">
+          <p class="wow animate__animated animate__slideInLeft" style="width: 50%">
             Hi! Nice to meet you! I'm a
             <span class="red">freelance full-stack developer</span> based in
             Buenos Aires, Argentina, I'm fluent in both English and Spanish and
@@ -117,12 +126,13 @@
             style="font-size: 40px; padding: 25px; margin-bottom: 10px"
           ></i>
         </div>
-        <div class="about-title observe">
+        <div class="about-title">
           <h2 class="falseh1" id="lang">Languages I Speak</h2>
         </div>
-        <div class="card-container observe">
+        <div class="card-container">
           <div
-            class="card first"
+            class="card first wow animate__animated animate__bounceInLeft"
+            data-wow-offset="80"
             style="
               width: 18rem;
               display: flex;
@@ -143,13 +153,15 @@
             </div>
           </div>
           <div
-            class="card first"
+            class="card first wow animate__animated animate__bounceInLeft"
+            data-wow-offset="80"
             style="
               width: 18rem;
               display: flex;
               justify-content: center;
               flex-wrap: wrap;
             "
+            data-wow-delay="0.5s"
           >
             <div class="card-body">
               <h5 class="card-title"><i class="fa-brands fa-node"></i></h5>
@@ -162,13 +174,15 @@
             </div>
           </div>
           <div
-            class="card first"
+            class="card first wow animate__animated animate__bounceInLeft"
+            data-wow-offset="80"
             style="
               width: 18rem;
               display: flex;
               justify-content: center;
               flex-wrap: wrap;
             "
+            data-wow-delay="1s"
           >
             <div class="card-body">
               <h5 class="card-title"><i class="fa-solid fa-code"></i></h5>
@@ -183,13 +197,15 @@
             </div>
           </div>
           <div
-            class="card first"
+            class="card first wow animate__animated animate__bounceInLeft"
+            data-wow-offset="80"
             style="
               width: 18rem;
               display: flex;
               justify-content: center;
               flex-wrap: wrap;
             "
+            data-wow-delay="1.5s"
           >
             <div class="card-body">
               <h5 class="card-title"><i class="fa-brands fa-react"></i></h5>
@@ -206,7 +222,7 @@
             </div>
           </div>
         </div>
-        <div id="quotes" class="observe">
+        <div id="quotes">
           <hr class="hr" />
           <i
             class="fa-solid fa-quote-left"
@@ -217,8 +233,8 @@
               padding-right: 20px;
             "
           ></i>
-          <h2 class="falseh1">
-            <span class="red">Greatness</span> from small beginnings
+          <h2 class="falseh1 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-offset="200">
+            <span class="red ">Greatness</span> from small beginnings
           </h2>
           <i
             class="fa-solid fa-quote-right"
@@ -233,8 +249,8 @@
         </div>
         <div class="personal-div">
           <h4>Some random info about me!</h4>
-          <div class="personal observe">
-            <div class="icons">
+          <div class="personal">
+            <div class="icons wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-offset="150">
               <i class="i fas fa-male"></i>
               <p class="icons-p">
                 My full name is
@@ -242,21 +258,21 @@
                 Argentine half Dutch
               </p>
             </div>
-            <div class="icons">
+            <div class="icons wow animate__animated animate__fadeInUp" data-wow-delay="1s"  data-wow-offset="150">
               <i class="i fas fa-gamepad"></i>
               <p class="icons-p">
                 I've loved <span class="red">video games</span> since I was
                 little and I still love them as much today!
               </p>
             </div>
-            <div class="icons">
+            <div class="icons wow animate__animated animate__fadeInUp" data-wow-delay="1.5s" data-wow-offset="150">
               <i class="i fas fa-chart-pie"></i>
               <p class="icons-p">
                 I am a really organized person and I appreciate
                 <span class="red">simple</span> and efficient designs
               </p>
             </div>
-            <div class="icons">
+            <div class="icons wow animate__animated animate__fadeInUp" data-wow-delay="2s" data-wow-offset="150">
               <i class="i fas fa-candy-cane"></i>
               <p class="icons-p">
                 I have a serious love for sweets! (<a
@@ -274,16 +290,16 @@
       </div>
     </section>
     <section id="portfolio" class="section portfolio">
-      <div class="about-title observe" id="port">
+      <div class="about-title" id="port">
         <h1>Portfolio</h1>
         <hr class="hr1" />
         <h4 style="padding-top: 20px">
-          A little bit of the <span class="red">work</span> I've done
+          A little bit of the <span style="display: inline-block;" class="red wow animate__animated animate__fadeInDown" data-wow-delay="0.5s" data-wow-offset="300">work</span> I've done
         </h4>
       </div>
 
       <div class="card-group">
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.5s" data-wow-offset="300">
           <img src="images/notes.png" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title-a">Notes App</h5>
@@ -293,7 +309,7 @@
             >
           </div>
         </div>
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeftBig" data-wow-delay="1.25s" data-wow-offset="300">
           <img
             src="images/Screenshot 2022-09-05 11.40.16 PM.png"
             class="card-img-top"
@@ -312,7 +328,7 @@
         </div>
       </div>
       <div class="card-group">
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.5s" data-wow-offset="100">
           <img src="images/onthisday.png" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title-a">On This Day</h5>
@@ -325,7 +341,7 @@
             >
           </div>
         </div>
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeftBig" data-wow-delay="1.25s" data-wow-offset="100">
           <img
             src="images/Screenshot 2022-09-01 3.33.33 PM.png"
             class="card-img-top"
@@ -341,7 +357,7 @@
         </div>
       </div>
       <div class="card-group">
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.5s" data-wow-offset="100">
           <img
             src="images/Screenshot 2022-09-01 2.57.52 PM.png"
             class="card-img-top"
@@ -358,7 +374,7 @@
             >
           </div>
         </div>
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeftBig" data-wow-delay="1.25s" data-wow-offset="100">
           <img
             src="images/Screenshot 2022-09-01 3.44.50 PM.png"
             class="card-img-top"
@@ -375,8 +391,8 @@
       </div>
     </section>
     <section id="contact" class="section contact">
-      <div class="about-title observe">
-        <h2 style="font-size: calc(1.375rem + 1.3vw)">Contact</h2>
+      <div class="about-title">
+        <h2 style="font-size: calc(1.375rem + 1.3vw)" class="wow animate__animated animate__slideInLeft" data-wow-duration="1s" data-wow-offset="150">Contact</h2>
         <hr class="hr1" />
         <h4 style="padding-top: 20px">
           Anything you want to comment or want to
